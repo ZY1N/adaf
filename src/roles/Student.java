@@ -8,7 +8,7 @@ import courses.Course;
 public class Student extends User {
 
 	//keep course and grade in hash map
-    public HashMap<String, String> Schedule = new HashMap<String, String>();
+    public HashMap<String, Course> Schedule = new HashMap<String, Course>();
     private ArrayList <String> coursesAndGrades = new ArrayList <String>();
 
     
@@ -21,10 +21,6 @@ public class Student extends User {
 		this.userType = "Student";
 	}
 	
-	public void addSchedule() {
-		
-		
-	}
 
 	public void readCourseAndGrade(String rawLine, ArrayList <Course> courseList) {
 		
@@ -94,12 +90,12 @@ public class Student extends User {
 	}
 
 	public void printSelectedCourses() {
-		for (Map.Entry<String, Object> entry : map.entrySet()) {
-		    String key = entry.getKey();
-		    Object value = entry.getValue();
-		    // ...
-		}
 		
+		System.out.println("The courses in your list");
+		
+		for (String key : this.Schedule.keySet()) {
+			System.out.println(key);
+		}
 	}
 
 }

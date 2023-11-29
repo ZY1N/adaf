@@ -50,6 +50,35 @@ public class Course {
 		// TODO Auto-generated method stub
 		return this.courseInstructor;
 	}
+
+
+	public String getTimeStart() {
+		return(this.timeStart);
+	}
+	
+	public String getTimeEnd() {
+		return(this.timeEnd);
+	}
+	
+	public String getDays() {
+		return(this.days);
+	}
+
+
+	public void addStudent() {
+		this.studentNum += 1;
+	}
+
+
+	public int getCourseCapacity() {
+		return Integer.parseInt(this.courseCapacity);
+	}
+
+
+	public int getStudentNum() {
+		// TODO Auto-generated method stub
+		return this.studentNum;
+	}
 	
 
 	//admin

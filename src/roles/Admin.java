@@ -27,4 +27,8 @@ public class Admin extends User {
     public String toString() {
         return ("Id:" + id + "\nName:" + name +  "\nUsername:" + username + "\nPassword:" + password);
     }
+
+	public String getName() {
+		return this.name;
+	}
 }
